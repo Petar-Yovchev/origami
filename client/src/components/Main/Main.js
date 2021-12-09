@@ -1,30 +1,28 @@
-import {Component} from 'react'; 
+import Post from '../Post/Post'; 
 import style from './Main.module.css';
 
 
-class Main extends Component {
-  constructor(props) {
-    super(props);
-    console.log(props);
-  }
-        render() {
-            return ( 
-           
-              
-              <main className={style.main}>
-                  <h1>Sooooooooome Heading</h1>
-                  <div className={style.posts}>
-                        <div className={style.post}>
-                          <img src="../white-origami-bird.png"  alt="origami"></img>
-                          {}
-                        </div>
-                        <div className={style.post}></div>
-                        <div className={style.post}></div>
-                  </div>
-              </main>
-            
-            )
-        }
-};
 
+const Main = ({
+  posts
+}) => {
+  console.log(posts);
+  return (
+    <main className={style.main}>
+      <h1>Sooooooooome Heading</h1>
+
+      <div className={style.posts}>
+
+        {posts.map(x =>
+          <Post
+            key={x.id}
+            content={x.content}
+            author={x.author}
+          />
+        )}
+      </div>
+
+    </main>
+  )
+}
 export default Main;
