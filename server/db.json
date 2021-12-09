@@ -2,12 +2,12 @@
     "posts": [
         {
             "id": 1,
-            "countent": "Some content here",
+            "countent": "Content",
             "author": "Pesho"
         },
         {
             "id": 2,
-            "countent": "Some content here 2",
+            "countent": "Content 2",
             "author": "Tosho"
         }
     ]
