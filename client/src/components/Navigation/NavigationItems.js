@@ -8,7 +8,7 @@ class NavigationItems extends Component {
     render() {
         return (
             <li className='listItem'>
-                <a href="#">{this.props.children}</a>
+                <span>{this.props.children}</span>
             </li>
         )
     }

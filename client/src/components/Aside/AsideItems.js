@@ -8,7 +8,7 @@ class AsideItems extends Component {
     render() {
         return (
             <li className='listItem'>
-               <li className="listItem"><a href="#">{this.props.children}</a></li>
+                <a href="#">{this.props.children}</a> 
             </li>
         )
     }

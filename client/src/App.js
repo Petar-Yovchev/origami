@@ -9,6 +9,7 @@ import Main from './components/Main/Main';
 import Footer from "./components/Footer/Footer"
 import About from './components/About/About';
 import Contacts from './components/Contacts/Contacts';
+import Person from './components/Person-page/Person';
 import style from './App.module.css';
 
 class App extends Component {
@@ -36,14 +37,16 @@ class App extends Component {
                 <Navigation />
 
                 <div className={style.container}>
-                    <Aside />
-                   
+                    
+                    <Aside/>
+                 
                     <Routes>
                         <Route path="/" element={
                             <Main posts={this.state.posts} />}
                         />
                         <Route path="/about" element={<About/>}/>
                         <Route path="/contacts" element={<Contacts/>}/>
+                        <Route path="/person-page/:name" element={<Person/>}/>
                      </Routes>
                     
                      

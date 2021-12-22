@@ -6,7 +6,7 @@
     font-family: 'Indie- Flower', cursive;
     
 }
-nav .listItem a {
+nav .listItem span {
     color: white;
     text-decoration: none;
 }

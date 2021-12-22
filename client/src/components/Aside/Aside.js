@@ -1,5 +1,6 @@
 import {Component} from 'react';
 import AsideItems from './AsideItems';
+import {Link} from 'react-router-dom'
 import style from './Aside.module.css'
 
 
@@ -8,17 +9,18 @@ class Aside extends Component {
             return ( 
             <aside className={style.aside}>
                 <ul>
-                    <AsideItems>Going to 1</AsideItems>
-                    <AsideItems>Going to 2</AsideItems>
-                    <AsideItems>Going to 3</AsideItems>
-                    <AsideItems>Going to 4</AsideItems>
-                    <AsideItems>Going to 5</AsideItems>
-                    <AsideItems>Going to 6</AsideItems>
-                    <AsideItems>Going to 7</AsideItems>
-                    <AsideItems>Going to 8</AsideItems>
-                    <AsideItems>Going to 9</AsideItems>
-                    <AsideItems>Going to 10</AsideItems>
-                    <AsideItems>Going to 11</AsideItems>
+                   <Link to="/person-page/Mariq"> <AsideItems>Mariq's origami</AsideItems></Link>
+                   <Link to="/person-page/Gosho"> <AsideItems>Gosho's origami</AsideItems></Link>
+                   <Link to="/person-page/Karina"> <AsideItems>Karina's origami</AsideItems></Link>
+                   <Link to="/person-page/Mike"> <AsideItems>Mike's origami</AsideItems></Link>
+                   <Link to="/person-page/Pesho"> <AsideItems>Pesho's origami</AsideItems></Link>
+                   <Link to="/person-page/Dobri"> <AsideItems>Dobri's origami</AsideItems></Link>
+                   <Link to="/person-page/Ivan"> <AsideItems>Ivan's origami</AsideItems></Link>
+                   <Link to="/person-page/Iva"> <AsideItems>Iva's origami</AsideItems></Link>
+                   <Link to="/person-page/Vladi"> <AsideItems>Vladi's origami</AsideItems></Link>
+                    <Link to="/person-page/Sttela"><AsideItems>Sttela's origami</AsideItems></Link>
+                    <Link to="/person-page/Kristina"><AsideItems>Kristina's origami</AsideItems></Link>
+
                 </ul>
             </aside> 
             )
