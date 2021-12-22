@@ -1,4 +1,5 @@
 import { Component } from 'react'
+import {Route, Routes, Link, NavLink, Redirect, Switch, Router} from 'react-router-dom';
 
 import * as postService from './services/postService'
 
@@ -6,6 +7,8 @@ import Navigation from './components/Navigation/Navigation'
 import Aside from './components/Aside/Aside';
 import Main from './components/Main/Main';
 import Footer from "./components/Footer/Footer"
+import About from './components/About/About';
+import Contacts from './components/Contacts/Contacts';
 import style from './App.module.css';
 
 class App extends Component {
@@ -34,7 +37,16 @@ class App extends Component {
 
                 <div className={style.container}>
                     <Aside />
-                    <Main posts={this.state.posts} />
+                   
+                    <Routes>
+                        <Route path="/" element={
+                            <Main posts={this.state.posts} />}
+                        />
+                        <Route path="/about" element={<About/>}/>
+                        <Route path="/contacts" element={<Contacts/>}/>
+                     </Routes>
+                    
+                     
                 </div>
                 <Footer/>
             </div>
